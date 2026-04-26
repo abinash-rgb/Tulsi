@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intel i5-14400</title>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    padding: 20px;
+    font-size: clamp(22px, 4vw, 40px);
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+/* Table Section */
+.specs {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.specs h2 {
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 40%;
+    color: #ccc;
+}
+
+/* Viewer */
+.viewer {
+    position: fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.viewer img {
+    max-width:90%;
+    max-height:90%;
+}
+
+.viewer.active { display:flex; }
+
+</style>
+</head>
+
+<body>
+
+<h1>Intel Core i5-14400</h1>
+
+<!-- SLIDER -->
+<div class="slider" id="slider">
+    <div class="slides" id="slides">
+        <div class="slide"><img src="products/P650G_01.png"></div>
+        <div class="slide"><img src="products/P650G_02.png"></div>
+		<div class="slide"><img src="products/P650G_03.png"></div>
+		<div class="slide"><img src="products/P650G_04.png"></div>
+		<div class="slide"><img src="products/P650G_05.png"></div>
+		<div class="slide"><img src="products/P650G_06.png"></div>
+    </div>
+
+    <button class="arrow left" onclick="prevSlide()">❮</button>
+    <button class="arrow right" onclick="nextSlide()">❯</button>
+</div>
+
+<!-- SPEC TABLE -->
+<div class="specs">
+
+
+
+<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description" style=""><p><strong>Gigabyte P650G 650 Watt 80 Plus Gold SMPS GP-P650G</strong></p><p><strong>Overview :&nbsp;</strong></p><ul><li>80 PLUS Gold certified</li><li>Main Japanese capacitors</li><li>120mm Silent Hydraulic Bearing (HYB) Fan</li><li>Powerful single  12V rail</li><li>OVP/OPP/SCP/UVP/OCP/OTP protection</li><li>Compact design</li><li>5 years warranty (Adjusted according to different regions)</li></ul><p><strong>HIGH QUALITY JAPANESE CAPACITORS</strong></p><p>The primary capacitors are sourced from top-tier Japanese manufacturers, delivering a premium and stable power supply that effectively extends the product’s lifespan.</p><p><strong>120MM SILENT HYDRAULIC BEARING (HYB) FAN</strong></p><p>The 120mm fan detects the current power utilization and temperature, automatically adjusting its rotational speed to minimize noise.The Hydraulic Bearing fan offers a longer and more stable lifespan in comparison to traditional sleeve fan.</p><p><strong>PROTECTION</strong></p><p>To guarantee the stable operation of your entire computer system under any circumstances, we have incorporated a range of protective features including OCP, OTP, OVP, OPP, UVP, and SCP. Moreover, we have obtained safety certifications from various countries to ensure the consistent and secure functioning of your system.</p><p><strong>80 PLUS GOLD CERTIFIED</strong></p><p>The 80 Plus Gold certification guarantees a 90% efficiency rate at a 50% load, resulting in reduced power wastage, diminished heat generation, and minimized fan noise.</p><p><strong>COMPACT DESIGN</strong></p><p>Through GIGABYTE’s exceptional design capabilities and the use of high-quality materials, we have successfully reduced the size of the power supply unit. This compact power supply not only facilitates easier installation into various chassis but also enhances the thermal efficiency within the case</p><p><strong>Specification :&nbsp;</strong></p><table width="873"><tbody><tr><td width="125">Model</td><td width="748">GP-P650G</td></tr><tr><td>Type</td><td>Intel Form Factor ATX 12V</td></tr><tr><td>PFC</td><td>Active PFC (&gt;0.9 typical)</td></tr><tr><td>Input Voltage</td><td>100-240 Vac (full range)</td></tr><tr><td>Input Current</td><td>9-4A</td></tr><tr><td>Input Frequency</td><td>60-50 Hz</td></tr><tr><td>Output Capacity</td><td>650W</td></tr><tr><td>Dimension</td><td>150 x 140 x 86 mm</td></tr><tr><td>Fan Type</td><td>120mm Hydraulic Bearing (HYB) Fan</td></tr><tr><td>80 PLUS</td><td>Gold</td></tr><tr><td>Efficiency</td><td>90% at typical load</td></tr><tr><td>MTBF</td><td>&gt;100,000 hours</td></tr><tr><td>Protection</td><td>OVP/OPP/SCP/UVP/OCP/OTP</td></tr><tr><td>Power Good Signal</td><td>100-500ms</td></tr><tr><td>Hold Up Time</td><td>&gt;16ms</td></tr><tr><td>Cable Type</td><td>Flat, All black</td></tr><tr><td>Connectors</td><td width="748">ATX/MB 20 4 Pin x 1 : 600mm CPU/EPS 4 4 Pin x 2 : 600mm   150mm PCI-e 6 2 Pin x 4 : 500mm   150mm SATA x 6 : 500mm   150mm   150mm 4 Pin Peripheral x 3 : 500mm   150mm   150mm</td></tr></tbody></table><p>&nbsp;</p></div>
+    
+
+</div>
+	
+</div>
+
+<!-- FULLSCREEN -->
+<div class="viewer" id="viewer" onclick="closeViewer()">
+    <img id="viewerImg">
+</div>
+
+<script>
+let index = 0;
+const slides = document.getElementById("slides");
+const totalSlides = slides.children.length;
+
+function updateSlide() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function nextSlide() {
+    index = (index + 1) % totalSlides;
+    updateSlide();
+}
+
+function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateSlide();
+}
+
+setInterval(nextSlide, 5000);
+
+/* Swipe */
+let startX = 0;
+
+slider.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend", e => {
+    let endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) nextSlide();
+    if (endX - startX > 50) prevSlide();
+});
+
+/* Viewer */
+const viewer = document.getElementById("viewer");
+const viewerImg = document.getElementById("viewerImg");
+
+document.querySelectorAll(".slide img").forEach(img => {
+    img.onclick = () => {
+        viewer.classList.add("active");
+        viewerImg.src = img.src;
+    }
+});
+
+function closeViewer() {
+    viewer.classList.remove("active");
+}
+</script>
+
+</body>
+</html>

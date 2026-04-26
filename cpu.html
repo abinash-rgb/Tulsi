@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intel i5-14400</title>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    padding: 20px;
+    font-size: clamp(22px, 4vw, 40px);
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+/* Table Section */
+.specs {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.specs h2 {
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 40%;
+    color: #ccc;
+}
+
+/* Viewer */
+.viewer {
+    position: fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.viewer img {
+    max-width:90%;
+    max-height:90%;
+}
+
+.viewer.active { display:flex; }
+
+</style>
+</head>
+
+<body>
+
+<h1>Intel Core i5-14400</h1>
+
+<!-- SLIDER -->
+<div class="slider" id="slider">
+    <div class="slides" id="slides">
+        <div class="slide">
+            <img src="products/Intel-Core-i5-14400-10-Core-LGA-1700-Processor-BX8071514400.png">
+        </div>
+    </div>
+
+    <button class="arrow left" onclick="prevSlide()">❮</button>
+    <button class="arrow right" onclick="nextSlide()">❯</button>
+</div>
+
+<!-- SPEC TABLE -->
+<div class="specs">
+<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">
+
+  <p><strong>Intel Core i5-14400 10-Core LGA 1700 Processor BX8071514400</strong></p>
+
+  <p><strong>Overview :</strong></p>
+  <p>
+    Intel Core i5-14400 Desktop Processor features integrated Intel UHD 730 Graphics,
+    with 20MB of cache and a 5 GHz Turbo Boost frequency, this processor is made
+    to handle a variety of workloads
+  </p>
+
+  <p><strong>Specification :</strong></p>
+
+  <table width="622">
+    <tbody>
+
+      <tr><td width="364">Model</td><td width="258">i5-14400</td></tr>
+      <tr><td>Product Collection</td><td>Intel® Core™ i5 Processors (14th gen)</td></tr>
+      <tr><td>Code Name</td><td>Products formerly Raptor Lake</td></tr>
+      <tr><td>Vertical Segment</td><td>Desktop</td></tr>
+      <tr><td>Lithography</td><td>Intel 7</td></tr>
+      <tr><td>Use Conditions</td><td>PC/Client/Tablet</td></tr>
+
+      <tr><td><strong>CPU Specifications</strong></td><td></td></tr>
+      <tr><td>Total Cores</td><td>10</td></tr>
+      <tr><td># of Performance-cores</td><td>6</td></tr>
+      <tr><td># of Efficient-cores</td><td>4</td></tr>
+      <tr><td>Total Threads</td><td>16</td></tr>
+      <tr><td>Max Turbo Frequency</td><td>4.7 GHz</td></tr>
+      <tr><td>Performance-core Max Turbo Frequency</td><td>4.7 GHz</td></tr>
+      <tr><td>Efficient-core Max Turbo Frequency</td><td>3.5 GHz</td></tr>
+      <tr><td>Performance-core Base Frequency</td><td>2.5 GHz</td></tr>
+      <tr><td>Efficient-core Base Frequency</td><td>1.8 GHz</td></tr>
+      <tr><td>Cache</td><td>20 MB Intel® Smart Cache</td></tr>
+      <tr><td>Total L2 Cache</td><td>9.5 MB</td></tr>
+      <tr><td>Processor Base Power</td><td>65 W</td></tr>
+      <tr><td>Maximum Turbo Power</td><td>148 W</td></tr>
+
+      <tr><td><strong>Memory Specifications</strong></td><td></td></tr>
+      <tr><td>Max Memory Size</td><td>192 GB</td></tr>
+      <tr><td>Memory Types</td><td>Up to DDR5 4800 MT/s</td></tr>
+      <tr><td></td><td>Up to DDR4 3200 MT/s</td></tr>
+      <tr><td>Max Memory Channels</td><td>2</td></tr>
+      <tr><td>Max Memory Bandwidth</td><td>76.8 GB/s</td></tr>
+
+      <tr><td><strong>GPU Specifications</strong></td><td></td></tr>
+      <tr><td>GPU Name</td><td>Intel® UHD Graphics 730</td></tr>
+      <tr><td>Graphics Max Frequency</td><td>1.55 GHz</td></tr>
+      <tr><td>Graphics Output</td><td>eDP 1.4b, DP 1.4a, HDMI 2.1</td></tr>
+      <tr><td>Execution Units</td><td>24</td></tr>
+
+      <tr><td><strong>Expansion Options</strong></td><td></td></tr>
+      <tr><td>PCIe Version</td><td>5.0 and 4.0</td></tr>
+      <tr><td>Max PCIe Lanes</td><td>20</td></tr>
+
+      <tr><td><strong>Package Specifications</strong></td><td></td></tr>
+      <tr><td>Socket</td><td>FCLGA1700</td></tr>
+      <tr><td>TJunction</td><td>100°C</td></tr>
+
+      <tr><td><strong>Technologies</strong></td><td></td></tr>
+      <tr><td>Hyper-Threading</td><td>Yes</td></tr>
+      <tr><td>Turbo Boost</td><td>Yes</td></tr>
+
+      <tr><td><strong>Security</strong></td><td></td></tr>
+      <tr><td>AES</td><td>Yes</td></tr>
+      <tr><td>Boot Guard</td><td>Yes</td></tr>
+
+      <tr><td>Warranty</td><td>3 Years</td></tr>
+
+    </tbody>
+  </table>
+
+</div>
+    
+
+</div>
+	
+</div>
+
+<!-- FULLSCREEN -->
+<div class="viewer" id="viewer" onclick="closeViewer()">
+    <img id="viewerImg">
+</div>
+
+<script>
+let index = 0;
+const slides = document.getElementById("slides");
+const totalSlides = slides.children.length;
+
+function updateSlide() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function nextSlide() {
+    index = (index + 1) % totalSlides;
+    updateSlide();
+}
+
+function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateSlide();
+}
+
+setInterval(nextSlide, 5000);
+
+/* Swipe */
+let startX = 0;
+
+slider.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend", e => {
+    let endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) nextSlide();
+    if (endX - startX > 50) prevSlide();
+});
+
+/* Viewer */
+const viewer = document.getElementById("viewer");
+const viewerImg = document.getElementById("viewerImg");
+
+document.querySelectorAll(".slide img").forEach(img => {
+    img.onclick = () => {
+        viewer.classList.add("active");
+        viewerImg.src = img.src;
+    }
+});
+
+function closeViewer() {
+    viewer.classList.remove("active");
+}
+</script>
+
+</body>
+</html>

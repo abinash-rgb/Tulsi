@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intel i5-14400</title>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    padding: 20px;
+    font-size: clamp(22px, 4vw, 40px);
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+/* Table Section */
+.specs {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.specs h2 {
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 40%;
+    color: #ccc;
+}
+
+/* Viewer */
+.viewer {
+    position: fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.viewer img {
+    max-width:90%;
+    max-height:90%;
+}
+
+.viewer.active { display:flex; }
+
+</style>
+</head>
+
+<body>
+
+<h1>Intel Core i5-14400</h1>
+
+<!-- SLIDER -->
+<div class="slider" id="slider">
+    <div class="slides" id="slides">
+        <div class="slide"><img src="products/01.png"></div>
+		<div class="slide"><img src="products/02.png"></div>
+		<div class="slide"><img src="products/03.png"></div>
+		<div class="slide"><img src="products/04.png"></div>
+		<div class="slide"><img src="products/05.png"></div>
+		<div class="slide"><img src="products/06.png"></div>
+        
+    </div>
+
+    <button class="arrow left" onclick="prevSlide()">❮</button>
+    <button class="arrow right" onclick="nextSlide()">❯</button>
+</div>
+
+<!-- SPEC TABLE -->
+<div class="specs">
+
+
+<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description" style=""><p><strong>Deepcool Gammaxx AG400 ARGB 120mm CPU Air Cooler R-AG400-BKANMC-G-1</strong></p><p><strong>Overview :&nbsp;</strong></p><p>The DeepCool AG400 ARGB is a single tower 120mm CPU cooler that builds upon our legacy for high-quality cooling performance but stripped down for a streamlined and efficient package.</p><p><strong>STELLAR THERMAL PERFORMANCE</strong></p><p>Enjoy better system performance by keeping things cool with up to 220W of heat dissipation power featuring four direct touch heat pipes that rapidly draw heat away from the CPU.</p><p><strong>FAN LOCK MOUNTING SYSTEM</strong></p><p>When installing the AG400 ARGB, the fan does not need to be disassembled during the process, simplifying and saving time.</p><p><strong>BALANCED BIDIRECTIONAL HEAT PIPE TECHNOLOGY</strong></p><p>By optimizing the internal capillary structure and injecting a precise amount of liquid, the heat pipe achieves the best heat dissipation performance regardless of whether the cooler is in a vertical or horizontal case. This perfect ratio facilitates a highly efficient phase change throughout the heat pipe and achieves lower thermal resistance over a wide TDP range.</p><p><strong>HIGH EFFICIENCY FANS</strong></p><p>Find your optimal balance with automatic PWM support for full performance under load to silent efficiency at idle.</p><p><strong>SIMPLE AND SECURE</strong></p><p>The included mounting brackets support both Intel and AMD platforms with an easy five-step installation process that maintains great contact pressure. The offset design of the heat pipes ensures that the cooler can be installed with the fan already attached.</p><p><strong>Specification :&nbsp;</strong></p><table width="393"><tbody><tr><td width="161">Model</td><td width="232">R-AG400-BKANMC-G-1</td></tr><tr><td>Application For</td><td>Intel&nbsp;LGA1700/1200/1151/1150/1155</td></tr><tr><td></td><td>AMD&nbsp;AM5/AM4</td></tr><tr><td>Product Dimensions</td><td>125×92×150 mm</td></tr><tr><td>Heatsink Dimensions</td><td>120×92×150 mm</td></tr><tr><td>Net Weight</td><td>614 g</td></tr><tr><td>Heatpipe</td><td>Ø6 mm×4 pcs</td></tr><tr><td>Fan Dimensions</td><td>120×120×25 mm</td></tr><tr><td>Fan Speed</td><td>500~2000 RPM±10%</td></tr><tr><td>Fan Airflow</td><td>75.89 CFM</td></tr><tr><td>Fan Air Pressure</td><td>2.53 mmAq</td></tr><tr><td>Fan Noise</td><td>≤31.6 dB(A)</td></tr><tr><td>Fan Connector</td><td>4-pin PWM</td></tr><tr><td>Bearing Type</td><td>Hydro Bearing</td></tr><tr><td>Fan Rated Voltage</td><td>12 VDC</td></tr><tr><td>Fan Rated Current</td><td>0.28 A</td></tr><tr><td>Fan Power Consumption</td><td>3.36 W</td></tr><tr><td>LED Type</td><td>Addressable RGB LED</td></tr><tr><td>LED Connector</td><td>3-pin( 5V-D-G)</td></tr><tr><td>LED Rated Voltage</td><td>5 VDC</td></tr><tr><td>LED Power Consumption</td><td>1.05 W</td></tr><tr><td>Warranty</td><td>1 Year</td></tr></tbody></table><p>&nbsp;</p></div>
+    
+	
+
+</div>
+	
+</div>
+
+<!-- FULLSCREEN -->
+<div class="viewer" id="viewer" onclick="closeViewer()">
+    <img id="viewerImg">
+</div>
+
+<script>
+let index = 0;
+const slides = document.getElementById("slides");
+const totalSlides = slides.children.length;
+
+function updateSlide() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function nextSlide() {
+    index = (index + 1) % totalSlides;
+    updateSlide();
+}
+
+function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateSlide();
+}
+
+setInterval(nextSlide, 5000);
+
+/* Swipe */
+let startX = 0;
+
+slider.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend", e => {
+    let endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) nextSlide();
+    if (endX - startX > 50) prevSlide();
+});
+
+/* Viewer */
+const viewer = document.getElementById("viewer");
+const viewerImg = document.getElementById("viewerImg");
+
+document.querySelectorAll(".slide img").forEach(img => {
+    img.onclick = () => {
+        viewer.classList.add("active");
+        viewerImg.src = img.src;
+    }
+});
+
+function closeViewer() {
+    viewer.classList.remove("active");
+}
+</script>
+
+</body>
+</html>

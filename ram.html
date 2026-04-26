@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intel i5-14400</title>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    padding: 20px;
+    font-size: clamp(22px, 4vw, 40px);
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+/* Table Section */
+.specs {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.specs h2 {
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 40%;
+    color: #ccc;
+}
+
+/* Viewer */
+.viewer {
+    position: fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.viewer img {
+    max-width:90%;
+    max-height:90%;
+}
+
+.viewer.active { display:flex; }
+
+</style>
+</head>
+
+<body>
+
+<h1>Intel Core i5-14400</h1>
+
+<!-- SLIDER -->
+<div class="slider" id="slider">
+    <div class="slides" id="slides">
+        <div class="slide"><img src="products/crucial-DDR5-Pro-memory-gallery-image-1.png"></div>
+        <div class="slide"><img src="products/crucial-DDR5-Pro-memory-gallery-image-2.png"></div>
+        <div class="slide"><img src="products/crucial-DDR5-Pro-memory-gallery-image-3.png"></div>
+		<div class="slide"><img src="products/crucial-DDR5-Pro-memory-gallery-image-4.png"></div>
+		<div class="slide"><img src="products/crucial-DDR5-Pro-memory-gallery-image-5.png"></div>
+		<div class="slide"><img src="products/crucial-DDR5-Pro-memory-gallery-image-6.png"></div>
+    </div>
+
+    <button class="arrow left" onclick="prevSlide()">❮</button>
+    <button class="arrow right" onclick="nextSlide()">❯</button>
+</div>
+
+<!-- SPEC TABLE -->
+<div class="specs">
+<div class="tab-pane active" id="tab-description">
+            <div class="container-fluid" style="padding:0px;">
+            
+            </div>
+    
+            <div class="">
+            </div>
+            <p><span style="font-size:18px;"><strong>Features:</strong></span></p>
+
+<p><span style="font-size:14px;"><strong>Crucial Pro 16GB DDR5-5600 UDIMM</strong></span></p>
+
+<p>Crucial® DDR5 Pro Memory has the blazing speed and massive bandwidth needed to support next-gen multi-core CPUs without the fuss of overclocking, latency tuning, die chasing, and LEDs.</p>
+
+<p><span style="font-size:14px;"><strong>Low-profile heat spreader</strong></span></p>
+
+<p>Dissipate module heat and enhance your gaming rig with a sleek, modern look.<br>
+With our integrated low-profile heat spreader, Crucial DDR5 Pro can even fit in smaller PCs.</p>
+
+<p><span style="font-size:14px;"><strong>No-fuss memory for gaming rigs</strong></span></p>
+
+<p>1.88x faster than DDR45 to boost in-game frame rates and eliminate screen tears. Enhance your gaming rigs with our sleek design without the fuss of chasing B/E-die, LEDs or the risks associated with overclocking speeds and tuning latency.</p>
+
+<p><span style="font-size:14px;"><strong>Improved productivity for creatives and professionals</strong></span></p>
+
+<p>With 2x the bandwidth6 of the previous generation, Crucial DDR5 Pro enables next-level multitasking and faster processing so you can tackle even heavy workloads in less time.</p>
+
+<p><span style="font-size:14px;"><strong>Supports Intel XMP 3.0 and AMD EXPO on the same module</strong></span></p>
+
+<p>Achieve easy performance recovery on CPUs that suppress rated memory speeds with Intel® XMP 3.0 or AMD EXPO2 turned on in the UEFI/BIOS settings. Get the full value of your investment without overpaying for performance.</p>
+
+<p>&nbsp;<span style="font-size:14px;"><strong>Micron quality and reliability</strong></span></p>
+
+<p>As one of only three global memory manufacturers, and with 45 years of memory expertise, Micron delivers cutting-edge engineering and superior component and module-level testing for all Crucial DRAM products.</p></div>
+
+
+
+<table class="table">
+                                       
+                                      <thead>
+                                          <tr>
+                                              <td colspan="2">
+                                                  <strong>Memory-(Ram)</strong>
+                                              </td>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                           
+                                          <tr>
+                                              <td>Model</td>
+                                              <td>CP16G56C46U5</td>
+                                          </tr>
+                                           
+                                          <tr>
+                                              <td>Product Series</td>
+                                              <td>Pro</td>
+                                          </tr>
+                                           
+                                          <tr>
+                                              <td>Memory Type</td>
+                                              <td>DDR5</td>
+                                          </tr>
+                                           
+                                          <tr>
+                                              <td>Capacity</td>
+                                              <td>16GB</td>
+                                          </tr>
+                                           
+                                          <tr>
+                                              <td>Kit Type</td>
+                                              <td>16GB x 1</td>
+                                          </tr>
+                                           
+                                          <tr>
+                                              <td>Speed</td>
+                                              <td>5600 MHz</td>
+                                          </tr>
+                                           
+                                          <tr>
+                                              <td>Tested Latency</td>
+                                              <td>46-45-45</td>
+                                          </tr>
+                                           
+                                          <tr>
+                                              <td>Tested Voltage</td>
+                                              <td>1.1 V</td>
+                                          </tr>
+                                           
+                                          <tr>
+                                              <td>Dimm Type</td>
+                                              <td>UDIMM</td>
+                                          </tr>
+                                           
+                                          <tr>
+                                              <td>Profile Type</td>
+                                              <td>Intel XMP,AMD EXPO</td>
+                                          </tr>
+                                           
+                                          <tr>
+                                              <td>Warranty</td>
+                                              <td>Limited Lifetime</td>
+                                          </tr>
+                                           
+                                          <tr>
+                                              <td>Note</td>
+                                              <td><p><span style="color: #ff0000;"> Features, Price and Specifications are subject to change without notice. Images use for Representation Purpose Only.</span></p></td>
+                                          </tr>
+                                           
+                                      </tbody>
+                                                                        </table>
+    
+
+</div>
+	
+</div>
+
+<!-- FULLSCREEN -->
+<div class="viewer" id="viewer" onclick="closeViewer()">
+    <img id="viewerImg">
+</div>
+
+<script>
+let index = 0;
+const slides = document.getElementById("slides");
+const totalSlides = slides.children.length;
+
+function updateSlide() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function nextSlide() {
+    index = (index + 1) % totalSlides;
+    updateSlide();
+}
+
+function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateSlide();
+}
+
+setInterval(nextSlide, 5000);
+
+/* Swipe */
+let startX = 0;
+
+slider.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend", e => {
+    let endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) nextSlide();
+    if (endX - startX > 50) prevSlide();
+});
+
+/* Viewer */
+const viewer = document.getElementById("viewer");
+const viewerImg = document.getElementById("viewerImg");
+
+document.querySelectorAll(".slide img").forEach(img => {
+    img.onclick = () => {
+        viewer.classList.add("active");
+        viewerImg.src = img.src;
+    }
+});
+
+function closeViewer() {
+    viewer.classList.remove("active");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intel i5-14400</title>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    padding: 20px;
+    font-size: clamp(22px, 4vw, 40px);
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+/* Table Section */
+.specs {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.specs h2 {
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 40%;
+    color: #ccc;
+}
+
+/* Viewer */
+.viewer {
+    position: fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.viewer img {
+    max-width:90%;
+    max-height:90%;
+}
+
+.viewer.active { display:flex; }
+
+</style>
+</head>
+
+<body>
+
+<h1>Intel Core i5-14400</h1>
+
+<!-- SLIDER -->
+<div class="slider" id="slider">
+    <div class="slides" id="slides">
+        <div class="slide"><img src="products/B760M G AX_01.png"></div>
+        <div class="slide"><img src="products/B760M G AX_02.png"></div>
+        <div class="slide"><img src="products/B760M G AX_03.png"></div>
+		<div class="slide"><img src="products/B760M G AX_04.png"></div>
+    </div>
+
+    <button class="arrow left" onclick="prevSlide()">❮</button>
+    <button class="arrow right" onclick="nextSlide()">❯</button>
+</div>
+
+<!-- SPEC TABLE -->
+<div class="specs">
+<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab"
+     id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">
+
+  <p><strong>Gigabyte B760M G AX (Wi-Fi) DDR5 Motherboard</strong></p>
+
+  <p><strong>Overview :</strong></p>
+
+  <p><strong>6+2+1 Phases Hybrid Digital VRM Design</strong></p>
+  <ul>
+    <li>6+2+1 Phases Low RDS(on) MOSFETs</li>
+    <li>Premium Chokes and Capacitors for better stability</li>
+  </ul>
+
+  <p><strong>PCIe 4.0 Design</strong></p>
+  <p>
+    Ready for PCIe 4.0 devices with improved bandwidth and signal integrity.
+  </p>
+
+  <p><strong>DDR5 Overclocking</strong></p>
+  <p>
+    Supports DDR5 overclocking up to 8000 MT/s and beyond with XMP.
+  </p>
+
+  <p><strong>Dual PCIe 4.0 M.2</strong></p>
+  <p>Maximize system performance with dual high-speed M.2 slots.</p>
+
+  <p><strong>SMART FAN 6</strong></p>
+  <p>
+    Advanced cooling with customizable fan curves and temperature sensors.
+  </p>
+
+  <p><strong>Wi-Fi 6E & 2.5Gb LAN</strong></p>
+  <p>
+    Faster connectivity with Wi-Fi 6E and 2.5Gb Ethernet.
+  </p>
+
+  <p><strong>Specification :</strong></p>
+
+  <table width="800"><tbody><tr><td width="218">Model</td><td width="582">B760M G AX</td></tr><tr><td>CPU</td><td width="582">LGA1700 socket: Support for the 14th, 13th, and 12th Generation Intel Core, Pentium Gold and Celeron Processors</td></tr><tr><td></td><td width="582">L3 cache varies with CPU</td></tr><tr><td></td><td width="582">* Please refer to “CPU Support List” for more information.</td></tr><tr><td>Chipset</td><td width="582">Intel B760 Express Chipset</td></tr><tr><td>Memory</td><td width="582">14th and 13th Generation Intel Core i9/i7 Processors:</td></tr><tr><td></td><td width="582">Support for DDR5 8000(O.C.) /7800(O.C.) /7600(O.C.) /7400(O.C.) /7200(O.C.) /7000(O.C.) /6800(O.C.) /6600(O.C.) / 6400(O.C.) / 6200(O.C.) / 6000(O.C.) / 5800(O.C.) / 5600/5200/4800/4400 MT/s memory modules</td></tr><tr><td></td><td width="582">13th Generation Intel Core i5/i3 and 12th Generation Intel Core, Pentium Gold and Celeron Processors:</td></tr><tr><td></td><td width="582">Support for DDR5 4800/4400 MT/s memory modules</td></tr><tr><td></td><td width="582">2 x DDR5 DIMM sockets supporting up to 96 GB (48 GB single DIMM capacity) of system memory</td></tr><tr><td></td><td width="582">Dual channel memory architecture</td></tr><tr><td></td><td width="582">Support for ECC Un-buffered DIMM 1Rx8/2Rx8 memory modules (operate in non-ECC mode)</td></tr><tr><td></td><td width="582">Support for non-ECC Un-buffered DIMM 1Rx8/2Rx8/1Rx16 memory modules</td></tr><tr><td></td><td width="582">Support for Extreme Memory Profile (XMP) memory modules</td></tr><tr><td></td><td width="582">(The CPU and memory configuration may affect the</td></tr><tr><td></td><td width="582">supported memory types, data rate (speed), and number of DRAM modules, please refer to “Memory Support List” on GIGABYTE’s website for more information.</td></tr><tr><td>Onboard Graphics</td><td width="582">Integrated Graphics Processor-Intel HD Graphics support:</td></tr><tr><td></td><td width="582">1 x D-Sub port, supporting a maximum resolution of 1920×1200@60 Hz</td></tr><tr><td></td><td width="582">1 x HDMI port, supporting a maximum resolution of 4096×2160@60 Hz</td></tr><tr><td></td><td width="582">* Support for HDMI 2.1 version and HDCP 2.3.</td></tr><tr><td></td><td width="582">** Support native HDMI 2.1 TMDS compatible ports.</td></tr><tr><td></td><td width="582">1 x DisplayPort, supporting a maximum resolution of 4096×2304@60 Hz</td></tr><tr><td></td><td width="582">* Support for DisplayPort 1.2 version and HDCP 2.3</td></tr><tr><td></td><td width="582">(Graphics specifications may vary depending on CPU support.)</td></tr><tr><td></td><td width="582">Support for up to triple-display at the same time</td></tr><tr><td>Audio</td><td width="582">Realtek Audio CODEC</td></tr><tr><td></td><td width="582">High Definition Audio</td></tr><tr><td></td><td width="582">2/4/5.1/7.1-channel</td></tr><tr><td></td><td width="582">* You can change the functionality of an audio jack using the audio software. To configure 7.1-channel audio, access the audio software for audio settings.</td></tr><tr><td></td><td width="582">Support for S/PDIF Out</td></tr><tr><td>LAN</td><td width="582">Realtek 2.5GbE LAN chip (2.5 Gbps/1 Gbps/100 Mbps)</td></tr><tr><td>Wireless Communication module</td><td width="582">Intel Wi-Fi 6E AX211</td></tr><tr><td></td><td width="582">WIFI a, b, g, n, ac, ax, supporting 2.4/5/6 GHz carrier frequency bands</td></tr><tr><td></td><td width="582">BLUETOOTH 5.3</td></tr><tr><td></td><td width="582">Support for 11ax 160MHz wireless standard</td></tr><tr><td></td><td width="582">(Actual data rate may vary depending on environment and equipment.)</td></tr><tr><td>Expansion Slots</td><td width="582">CPU:</td></tr><tr><td></td><td width="582">1 x PCI Express x16 slot, supporting PCIe 4.0 and running at x16</td></tr><tr><td></td><td width="582">* The PCIEX16 slot can only support a graphics card or an NVMe SSD.</td></tr><tr><td></td><td width="582">Chipset:</td></tr><tr><td></td><td width="582">1 x PCI Express x1 slot, supporting PCIe 3.0 and running at x</td></tr><tr><td>Storage Interface</td><td width="582">CPU:</td></tr><tr><td></td><td width="582">1 x M.2 connector (Socket 3, M key, type 2280 PCIe 4.0 x4/x2 SSD support) (M2A_CPU)</td></tr><tr><td></td><td width="582">Chipset:</td></tr><tr><td></td><td width="582">1 x M.2 connector (Socket 3, M key, type 2280 PCIe 4.0 x4/x2 SSD support) (M2P_SB)</td></tr><tr><td></td><td width="582">4 x SATA 6Gb/s connectors</td></tr><tr><td></td><td width="582">RAID 0, RAID 1, RAID 5, and RAID 10 support for SATA storage devices</td></tr><tr><td>USB</td><td width="582">Chipset:</td></tr><tr><td></td><td width="582">1 x USB Type-C port on the back panel, with USB 3.2 Gen 1 support</td></tr><tr><td></td><td width="582">5 x USB 3.2 Gen 1 ports (3 ports on the back panel, 2 ports available through the internal USB header)</td></tr><tr><td></td><td width="582">2 x USB 2.0/1.1 ports on the back panel</td></tr><tr><td></td><td width="582">Chipset USB 2.0 Hub:</td></tr><tr><td></td><td width="582">4 x USB 2.0/1.1 ports available through the internal USB headers</td></tr><tr><td>Internal I/O Connectors</td><td width="582">1 x 24-pin ATX main power connector</td></tr><tr><td></td><td width="582">1 x 8-pin ATX 12V power connector</td></tr><tr><td></td><td width="582">1 x CPU fan header</td></tr><tr><td></td><td width="582">3 x system fan headers</td></tr><tr><td></td><td width="582">2 x addressable LED strip headers</td></tr><tr><td></td><td width="582">1 x RGB LED strip header</td></tr><tr><td></td><td width="582">2 x M.2 Socket 3 connectors</td></tr><tr><td></td><td width="582">4 x SATA 6Gb/s connectors</td></tr><tr><td></td><td width="582">1 x front panel header</td></tr><tr><td></td><td width="582">1 x front panel audio header</td></tr><tr><td></td><td width="582">1 x S/PDIF Out header</td></tr><tr><td></td><td width="582">1 x USB 3.2 Gen 1 header</td></tr><tr><td></td><td width="582">2 x USB 2.0/1.1 headers</td></tr><tr><td></td><td width="582">1 x Trusted Platform Module header (For the GC-TPM2.0 SPI/GC-TPM2.0 SPI 2.0 / GC-TPM2.0 SPI V2 module only)</td></tr><tr><td></td><td width="582">1 x serial port header</td></tr><tr><td></td><td width="582">1 x Q-Flash Plus button</td></tr><tr><td></td><td width="582">1 x reset jumper</td></tr><tr><td></td><td width="582">1 x Clear CMOS jumper</td></tr><tr><td>Back Panel Connectors</td><td width="582">2 x USB 2.0/1.1 ports</td></tr><tr><td></td><td width="582">1 x PS/2 keyboard/mouse port</td></tr><tr><td></td><td width="582">2 x SMA antenna connectors (1T1R) / (2T2R) (Note) jkl</td></tr><tr><td></td><td width="582">1 x D-Sub port</td></tr><tr><td></td><td width="582">1 x HDMI port</td></tr><tr><td></td><td width="582">1 x DisplayPort</td></tr><tr><td></td><td width="582">3 x USB 3.2 Gen 1 ports</td></tr><tr><td></td><td width="582">1 x USB Type-C® port, with USB 3.2 Gen 1 support</td></tr><tr><td></td><td width="582">1 x RJ-45 port</td></tr><tr><td></td><td width="582">3 x audio jacks</td></tr><tr><td>I/O Controller</td><td width="582">iTE® I/O Controller Chip</td></tr><tr><td>H/W Monitoring</td><td width="582">Voltage detection</td></tr><tr><td></td><td width="582">Temperature detection</td></tr><tr><td></td><td width="582">Fan speed detection</td></tr><tr><td></td><td width="582">Water cooling flow rate detection</td></tr><tr><td></td><td width="582">Fan fail warning</td></tr><tr><td></td><td width="582">Fan speed control</td></tr><tr><td></td><td width="582">* Whether the fan speed control function is supported will depend on the fan you install</td></tr><tr><td>BIOS</td><td width="582">1 x 128 Mbit flash</td></tr><tr><td></td><td width="582">Use of licensed AMI UEFI BIOS</td></tr><tr><td></td><td width="582">PnP 1.0a, DMI 2.7, WfM 2.0, SM BIOS 2.7, ACPI 5.0</td></tr><tr><td>Unique Features</td><td width="582">Support for GIGABYTE Control Center (GCC)</td></tr><tr><td></td><td width="582">* Available applications in GCC may vary by motherboard model. Supported functions of each application may also vary depending on motherboard specifications.</td></tr><tr><td></td><td width="582">Support for Q-Flash</td></tr><tr><td></td><td width="582">Support for Q-Flash Plus</td></tr><tr><td>Bundled Software</td><td width="582">Norton Internet Security (OEM version)</td></tr><tr><td></td><td width="582">LAN bandwidth management software</td></tr><tr><td>Operating System</td><td width="582">Support for Windows 11 64-bit</td></tr><tr><td></td><td width="582">Support for Windows 10 64-bit</td></tr><tr><td>Form Factor</td><td width="582">Micro ATX Form Factor; 24.4cm x 22.5cm</td></tr><tr><td>Warranty</td><td width="582">3 Years</td></tr></tbody></table>
+
+</div>
+    
+
+</div>
+	
+</div>
+
+<!-- FULLSCREEN -->
+<div class="viewer" id="viewer" onclick="closeViewer()">
+    <img id="viewerImg">
+</div>
+
+<script>
+let index = 0;
+const slides = document.getElementById("slides");
+const slider = document.getElementById("slider");
+const totalSlides = slides.children.length;
+
+function updateSlide() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function nextSlide() {
+    index = (index + 1) % totalSlides;
+    updateSlide();
+}
+
+function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateSlide();
+}
+
+setInterval(nextSlide, 5000);
+
+/* Swipe */
+let startX = 0;
+
+slider.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend", e => {
+    let endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) nextSlide();
+    if (endX - startX > 50) prevSlide();
+});
+
+/* Viewer */
+const viewer = document.getElementById("viewer");
+const viewerImg = document.getElementById("viewerImg");
+
+document.querySelectorAll(".slide img").forEach(img => {
+    img.onclick = () => {
+        viewer.classList.add("active");
+        viewerImg.src = img.src;
+    }
+});
+
+function closeViewer() {
+    viewer.classList.remove("active");
+}
+</script>
+
+</body>
+</html>

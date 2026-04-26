@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intel i5-14400</title>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    padding: 20px;
+    font-size: clamp(22px, 4vw, 40px);
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+/* Table Section */
+.specs {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.specs h2 {
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 40%;
+    color: #ccc;
+}
+
+/* Viewer */
+.viewer {
+    position: fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.viewer img {
+    max-width:90%;
+    max-height:90%;
+}
+
+.viewer.active { display:flex; }
+
+</style>
+</head>
+
+<body>
+
+<h1>Intel Core i5-14400</h1>
+
+<!-- SLIDER -->
+<div class="slider" id="slider">
+    <div class="slides" id="slides">
+        <div class="slide"><img src="products/crucial-p3-plus-ssd-gallery-image-1.jpg"></div>
+		<div class="slide"><img src="products/crucial-p3-plus-ssd-gallery-image-2.jpg"></div>
+		<div class="slide"><img src="products/crucial-p3-plus-ssd-gallery-image-3.jpg"></div>
+		<div class="slide"><img src="products/crucial-p3-plus-ssd-gallery-image-4.jpg"></div>
+		<div class="slide"><img src="products/crucial-p3-plus-ssd-gallery-image-5.jpg"></div>
+		<div class="slide"><img src="products/crucial-p3-plus-ssd-gallery-image-6.jpg"></div>
+    </div>
+
+    <button class="arrow left" onclick="prevSlide()">❮</button>
+    <button class="arrow right" onclick="nextSlide()">❯</button>
+</div>
+
+<!-- SPEC TABLE -->
+<div class="specs">
+
+
+<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description" style=""><p><strong>Crucial P3 Plus 500GB PCIe M.2 NVMe Gen 4 SSD CT500P3PSSD8</strong></p><p><strong>Overview :&nbsp;</strong></p><p>Maximize the performance of your system with the 500GB Crucial P3 Plus NVMe PCIe 4.0 M.2 Internal SSD. Designed for professionals, enthusiasts, and gamers, this internal solid-state drive is designed to deliver up to 43% greater performance than gen 3 drives with sequential read and write speeds of 4700 MB/s and 1900 MB/s. Installing this SSD into an available M.2 2280 PCIe 4.0 x4 slot allows you to load demanding applications, large project files, and complex games in a flash. It is also backward compatible with M.2 PCIe 3.0 slots with reduced speed.</p><p>The Crucial P3 Plus SSD uses Micron Advanced 176-layer 3D NAND technology and includes advanced features such as dynamic write acceleration, error correction code (ECC), TRIM support, and self-monitoring and reporting technology (SMART) to help ensure data integrity and high performance. With a 1.5-million hour MTBF rating, you can enjoy extended longevity.</p><p><strong>Specification :&nbsp;</strong></p><table width="536"><tbody><tr><td width="240">Storage Capacity</td><td width="296">500 GB PCIe 4.0 x4 M.2 2280 SSD</td></tr><tr><td>Read Speed</td><td>Sequential: 4700 MB/s</td></tr><tr><td></td><td>Random: 350,000 IOPS 4 kB Files</td></tr><tr><td>Write Speed</td><td>Sequential: 1900 MB/s</td></tr><tr><td></td><td>Random: 460,000 IOPS 4 kB Files</td></tr><tr><td>Buffer</td><td>None</td></tr><tr><td>Pre-Format</td><td>None</td></tr><tr><td>SSD Specs</td><td></td></tr><tr><td>Flash Memory Type</td><td>3D NAND</td></tr><tr><td>SMART Support</td><td>Yes</td></tr><tr><td>TRIM Support</td><td>Yes</td></tr><tr><td>Reliability / Data Integrity</td><td></td></tr><tr><td>Encryption</td><td>None</td></tr><tr><td>Mean Time Between Failures (MTBF)</td><td>1.5 Million Hours</td></tr><tr><td>General</td><td></td></tr><tr><td>Dimensions</td><td>3.15 x 0.87 x 0.09″ / 80.01 x 22.1 x 2.29&nbsp;mm</td></tr><tr><td>Weight</td><td>0.6&nbsp;oz / 17&nbsp;g</td></tr><tr><td>Packaging Info</td><td></td></tr><tr><td>Package Weight</td><td>0.08 lb</td></tr><tr><td>Box Dimensions (LxWxH)</td><td>6 x 4.2 x 0.6″</td></tr></tbody></table><p>&nbsp;</p></div></div><div class="tab-content-wrap">
+
+
+</div>
+	
+</div>
+
+<!-- FULLSCREEN -->
+<div class="viewer" id="viewer" onclick="closeViewer()">
+    <img id="viewerImg">
+</div>
+
+<script>
+let index = 0;
+const slides = document.getElementById("slides");
+const totalSlides = slides.children.length;
+
+function updateSlide() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function nextSlide() {
+    index = (index + 1) % totalSlides;
+    updateSlide();
+}
+
+function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateSlide();
+}
+
+setInterval(nextSlide, 5000);
+
+/* Swipe */
+let startX = 0;
+
+slider.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend", e => {
+    let endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) nextSlide();
+    if (endX - startX > 50) prevSlide();
+});
+
+/* Viewer */
+const viewer = document.getElementById("viewer");
+const viewerImg = document.getElementById("viewerImg");
+
+document.querySelectorAll(".slide img").forEach(img => {
+    img.onclick = () => {
+        viewer.classList.add("active");
+        viewerImg.src = img.src;
+    }
+});
+
+function closeViewer() {
+    viewer.classList.remove("active");
+}
+</script>
+
+</body>
+</html>

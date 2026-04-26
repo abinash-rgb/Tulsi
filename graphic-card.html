@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intel i5-14400</title>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    padding: 20px;
+    font-size: clamp(22px, 4vw, 40px);
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+/* Table Section */
+.specs {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.specs h2 {
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 40%;
+    color: #ccc;
+}
+
+/* Viewer */
+.viewer {
+    position: fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.viewer img {
+    max-width:90%;
+    max-height:90%;
+}
+
+.viewer.active { display:flex; }
+
+</style>
+</head>
+
+<body>
+
+<h1>Intel Core i5-14400</h1>
+
+<!-- SLIDER -->
+<div class="slider" id="slider">
+    <div class="slides" id="slides">
+        <div class="slide"><img src="products/rx9060xt-cl-16go-image-1.png"></div>
+        <div class="slide"><img src="products/rx9060xt-cl-16go-image-2.png"></div>
+		<div class="slide"><img src="products/rx9060xt-cl-16go-image-3.png"></div>
+		<div class="slide"><img src="products/rx9060xt-cl-16go-image-4.png"></div>
+		<div class="slide"><img src="products/rx9060xt-cl-16go-image-5.png"></div>
+		<div class="slide"><img src="products/rx9060xt-cl-16go-image-6.png"></div>
+    </div>
+
+    <button class="arrow left" onclick="prevSlide()">❮</button>
+    <button class="arrow right" onclick="nextSlide()">❯</button>
+</div>
+
+<!-- SPEC TABLE -->
+<div class="specs">
+
+
+<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description" style=""><p><strong>Asrock AMD Radeon RX 9060 XT Challenger 16GB OC Graphic Card RX9060XT CL 16GO</strong></p><p><strong>Overview :&nbsp;</strong></p><ul><li><b>CLOCK: GPU / MOMORY</b><br>
+Boost Clock*: Up to 3290 MHz/ 20Gbps<br>
+Game Clock**: 2700 MHz/ 20Gbps</li><li><b>KEY SPECIFICATIONS:</b><br>
+AMD Radeon™ RX 9060 XT GPU<br>
+16GB GDDR6 on 128-bit Memory Bus<br>
+AMD RDNA™ 4 Architecture<br>
+32 Compute Units (3<sup>rd</sup>&nbsp;Gen RT   2<sup>nd</sup>&nbsp;Gen AI Accelerators)<br>
+Microsoft<sup>®</sup>&nbsp;DirectX<sup>®</sup>&nbsp;12 Ultimate<br>
+PCI<sup>®</sup>&nbsp;Express 5.0 Support<br>
+1 x 8-pin Power Connectors<br>
+2 x DisplayPort™ 2.1a / 1 x HDMI™ 2.1b</li><li><b>CLOCK: GPU / MOMORY</b><br>
+Dual Fan Design<br>
+Stylish Metal Backplate<br>
+LED Indicator<br>
+LED On/Off Switch<br>
+Striped Axial Fan<br>
+0db Silent Cooling<br>
+Super Alloy Graphic Card</li></ul><p><strong>Specification :&nbsp;</strong></p><table width="306"><tbody><tr><td width="113">Graphics Engine</td><td width="193">AMD Radeon™ RX 9060 XT</td></tr><tr><td>Bus Standard</td><td>PCI® Express5.0 x16</td></tr><tr><td>DirectX</td><td>12 Ultimate</td></tr><tr><td>OpenGL</td><td>4.6</td></tr><tr><td>Memory</td><td>GDDR6 16GB</td></tr><tr><td>Engine Clock</td><td>Boost Clock: 3290 MHz</td></tr><tr><td></td><td>Game Clock: 2700 MHz</td></tr><tr><td>Stream Processors</td><td>2048</td></tr><tr><td>Compute Units</td><td>32</td></tr><tr><td>Memory Clock</td><td>20Gbps</td></tr><tr><td>Memory Interface</td><td>128-bit</td></tr><tr><td>Resolution</td><td>Digital Max Resolution: 7680×4320</td></tr><tr><td>Interface</td><td>1 x HDMI™ 2.1b</td></tr><tr><td></td><td>2 x DisplayPort™ 2.1a</td></tr><tr><td>HDCP</td><td>Yes</td></tr><tr><td>Multi-view</td><td>3</td></tr><tr><td>Recommended PSU</td><td>550W</td></tr><tr><td>Power Connector</td><td>1 x 8-pin</td></tr><tr><td>Accessories</td><td>1 x Quick Installation Guide</td></tr><tr><td>Dimensions</td><td>249 x 132 x 41 mm</td></tr><tr><td>Net Weight</td><td>645 g</td></tr></tbody></table><p>&nbsp;</p></div>
+    
+
+</div>
+	
+</div>
+
+<!-- FULLSCREEN -->
+<div class="viewer" id="viewer" onclick="closeViewer()">
+    <img id="viewerImg">
+</div>
+
+<script>
+let index = 0;
+const slides = document.getElementById("slides");
+const totalSlides = slides.children.length;
+
+function updateSlide() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function nextSlide() {
+    index = (index + 1) % totalSlides;
+    updateSlide();
+}
+
+function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateSlide();
+}
+
+setInterval(nextSlide, 5000);
+
+/* Swipe */
+let startX = 0;
+
+slider.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend", e => {
+    let endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) nextSlide();
+    if (endX - startX > 50) prevSlide();
+});
+
+/* Viewer */
+const viewer = document.getElementById("viewer");
+const viewerImg = document.getElementById("viewerImg");
+
+document.querySelectorAll(".slide img").forEach(img => {
+    img.onclick = () => {
+        viewer.classList.add("active");
+        viewerImg.src = img.src;
+    }
+});
+
+function closeViewer() {
+    viewer.classList.remove("active");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PC Components Showcase</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        color: white;
+        overflow-x: hidden;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 20px;
+        font-size: 2.5rem;
+        font-weight: bold;
+        background: linear-gradient(90deg, #6366f1, #22c55e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 25px;
+        padding: 30px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        text-align: center;
+        transition: 0.4s;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .card img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        transition: transform 0.5s ease;
+    }
+
+    .card:hover img {
+        transform: rotate(10deg) scale(1.1);
+    }
+
+    .card h3 {
+        margin-top: 15px;
+        font-size: 1.2rem;
+    }
+
+    /* Glow effect */
+    .card::before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(99,102,241,0.2), transparent);
+        top: -50%;
+        left: -50%;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .card:hover::before {
+        opacity: 1;
+    }
+
+    /* Floating animation */
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+
+    .card img {
+        animation: float 4s ease-in-out infinite;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        opacity: 0.6;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+        header {
+            font-size: 1.8rem;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>⚡ PC Components Showcase</header>
+
+<div class="container">
+
+    <div class="card">
+    <a href="cpu.html" style="text-decoration:none; color:white;">
+        <img src="icons/processor.png">
+        <h3>Processor</h3>
+    </a>
+</div>
+
+    <div class="card">
+    <a href="mother-board.html" style="text-decoration:none; color:white;">
+        <img src="icons/motherboard.png">
+        <h3>Motherboard</h3>
+    </a>
+</div>
+
+    <div class="card">
+    <a href="ram.html" style="text-decoration:none; color:white;">
+        <img src="icons/ram-memory.png">
+        <h3>RAM</h3>
+    </a>
+</div>
+
+    <div class="card">
+    <a href="ssd.html" style="text-decoration:none; color:white;">
+        <img src="icons/solid-state-drive.png">
+        <h3>SSD</h3>
+    </a>
+</div>
+
+    <div class="card">
+    <a href="psu.html" style="text-decoration:none; color:white;">
+        <img src="icons/power-supply.png">
+        <h3>Power Supply</h3>
+    </a>
+</div>
+
+    <div class="card">
+    <a href="case.html" style="text-decoration:none; color:white;">
+        <img src="icons/cpu-tower.png">
+        <h3>CPU tower</h3>
+    </a>
+</div>
+
+<div class="card">
+    <a href="cpu-cooler.html" style="text-decoration:none; color:white;">
+        <img src="icons/fan.png">
+        <h3>Cooling Fan</h3>
+    </a>
+</div>
+
+<div class="card">
+    <a href="graphic-card.html" style="text-decoration:none; color:white;">
+        <img src="icons/vga-card.png">
+        <h3>Graphic Card</h3>
+    </a>
+</div>
+
+<div class="card">
+    <a href="cpu-cooler.html" style="text-decoration:none; color:white;">
+        <img src="icons/electric-keyboard.png">
+        <h3>Keyboard</h3>
+    </a>
+</div>
+
+<div class="card">
+    <a href="cpu-cooler.html" style="text-decoration:none; color:white;">
+        <img src="icons/mouse-clicker.png">
+        <h3>Mouse</h3>
+    </a>
+</div>
+
+</div>
+
+<footer>Built with ⚡ by You</footer>
+
+
+
+</body>
+</html>
